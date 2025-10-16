@@ -1,12 +1,22 @@
 # Depy Music
 
-A simple, privacy-friendly YouTube-powered music player with a local Library and Playlists. Paste a YouTube link, save it, organize into playlists, and control playback with custom UI.
-
+Depy Music is a lightweight, privacy-friendly YouTube-powered music player that runs entirely in the browser. Paste any YouTube link (watch/shorts/share/ID) to add it to your Library, organize tracks into Playlists, and control playback with a clean custom UI. No backend or API keys are required—data is stored locally via the browser’s storage, so your saved links and playlists persist on the same device.
 ## Features
-- Paste-and-play any YouTube link (watch/shorts/share/ID), saved in Library with title + channel [YouTube IFrame API].
+- Paste-and-play: Add YouTube links or IDs; titles and channels are fetched on the fly.
 - Custom controls: play/pause, seekbar with time, ±10s/±30s skip, volume, mute, keyboard shortcuts.
-- Playlists: create, add from Library, reorder, remove, auto-advance, showcase grid.
-- Data persistence via `localStorage` (per browser/device).
+- Library: Search, sort (newest, oldest, A–Z, Z–A), quick play, and remove actions.
+- Playlists: Create, add from Library, reorder, remove, and auto-advance; showcase grid to jump in fast.
+- Local persistence: Uses browser storage for Library and Playlists; no accounts or servers.
+- Minimal YouTube chrome: Uses parameters to reduce branding and related content while staying compliant.
+- Keyboard shortcuts: Space/K play-pause, J/L or ←/→ seek ±10s, Shift+←/→ ±30s, ↑/↓ volume.
+
+## Getting started
+- Local development: Serve the folder with any static server (for example, a simple HTTP server) and open index.html in your browser.
+- Usage: Paste a YouTube link → Add → Play. Use the right panel to manage Library and Playlists.
+
+## Notes
+- Autoplay with sound requires a user interaction due to modern browser policies.
+- YouTube branding and related content can be minimized but not removed entirely by design.
 
 ## Quick start
 - Local server:
@@ -26,3 +36,4 @@ A simple, privacy-friendly YouTube-powered music player with a local Library and
 
 ## License
 MIT
+
